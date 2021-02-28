@@ -2,34 +2,24 @@ html,
 body {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
 }
 
-.header2 {
+.header {
     background-image: url(../img/header.jpg);
-    background-size:cover;
+    background-size:cover;   
+    /*padding: 30px;*/
+    text-align: center;
 }
-.bg {
-    /* The image used */
-    background-image: url(../img/header.jpg);
-
-    /* Full height */
-    height: 50%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.header>h2 {
+    padding: 30px;
+    text-align: center;
 }
+
 .site-title {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;   
+    height: 300px;
 }
 
 .site-title > h1 {
@@ -41,10 +31,7 @@ body {
 .menu {
     display: flex;
     justify-content: flex-start;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    background-color: #00000080;    
+    background-color: #00000080;
 }
 
 .menu-element {
@@ -81,11 +68,10 @@ body {
 }
 
 .items {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
     align-items: stretch;    
     flex-flow: row wrap;
-    opacity: 0.6;
     background-color: #eee;
     padding: 5em;   
     width: 100%;
@@ -95,13 +81,11 @@ body {
     width: 300px;
     height: 300px; 
     background-color: #fff;
-    opacity: 0.9;
     position: relative;  
     margin-top: 2em;  
 }
 
 .item > img {
-    opacity: 0.9;
     width: 100%;
 }
 
