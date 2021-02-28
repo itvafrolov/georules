@@ -2,16 +2,35 @@ html,
 body {
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
-
+.top{
+    height: 0%;
+    /* background-color:#f1f1f1 ; */
+}
+.header-top {
+    float: left;
+    /* background-color:#f1f1f1 ; */
+    background-size: cover;   
+    /*padding: 30px;*/
+   
+    /* position: fixed; */
+}
+.logo {
+    /* width: 5rem;     */
+    padding-left: 2%;
+    padding-right: 15%;
+    /* margin-top: 1rem; */
+}
 .header {
     background-image: url(../img/header.jpg);
     background-size:cover;   
     /*padding: 30px;*/
     text-align: center;
+    /* position: fixed; */
 }
 .header>h2 {
-    padding: 30px;
+    /* padding: 30px; */
     text-align: center;
 }
 
@@ -19,7 +38,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 20rem;
 }
 
 .site-title > h1 {
@@ -29,22 +48,41 @@ body {
 }
 
 .menu {
+    margin-left: 5rem;
     display: flex;
     justify-content: flex-start;
-    background-color: #00000080;
+    /* background-color: #f1f1f1; */
 }
 
 .menu-element {
-    color: #fff;
-    text-transform: uppercase;
+    /* color: #fff; */
+    /* text-transform: uppercase; */
+
     text-decoration: none;
-    font-size: 1.3rem;
-    padding: 1rem 2rem;
-    margin-right: 2.5rem;
+    font-size: 100%;
+    
+    /* padding: 2.6% 5%; */
+    margin-right: 10rem;
+    
 }
 
-.menu-element:hover {
-    background-color: #000000a0;
+
+ul.menu {
+    /* padding: 50px 160px; */
+    list-style: none;
+    /* background-color: #f1f1f1; */
+}
+ul.menu li {
+    display: inline;
+    font-size: 18px;
+}
+ul.menu li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.menu li a:hover {
+    color: #01447e;
+    text-decoration: underline;
 }
 
 .content-container {
@@ -54,7 +92,7 @@ body {
 
 .sidebar {
     width: 20%;
-    padding: 500em;
+    /* padding: 500em; */
 }
 
 .sidebar > h2 {
@@ -179,6 +217,9 @@ p.dline {
 /* Mobile */
 @media only screen and (max-width: 720px) {
 
+    .logo {
+        width: 10%;     
+    }
     .site-title>h1 {
         text-align: center;
     }
