@@ -41,12 +41,12 @@ body {
 }
 .logo>img{    
     width: 4rem;
-    /* margin-left: 2rem; */
+    margin-left: 2rem;
 }
 .menutop {
     display: flex;
     align-items: center;
-    justify-content:space-evenly ;
+    justify-content:space-between ;
     height: 5rem;
     position: fixed;
     top: 0;
@@ -55,8 +55,8 @@ body {
 }
 .menutop-text {
     display: flex;
-    align-items:stretch;
-    /* margin-top: 2rem; */
+    align-items:center;
+    margin-top: 2rem;
 }
 .menutop-element {    
     text-decoration: none;
