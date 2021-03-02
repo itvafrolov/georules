@@ -61,8 +61,10 @@ body {
     text-decoration: none;
     margin-right: 1rem;
 }
-.menutop-lang-blok{
-
+.menutop-element-select{
+    text-decoration: none;
+    margin-right: 1rem;
+    font-style:initial;
 }
 
 .menutop-lang {
@@ -183,6 +185,14 @@ ul.menutop li a:hover {
     justify-content: center;
 }
 
+.Act {
+    
+    /* background-color: #f1f1f1; */
+    display: flex;
+    flex-direction: column;    
+    justify-content: left;
+}
+
 .description > h1{
     
     text-align: center;
@@ -191,6 +201,7 @@ ul.menutop li a:hover {
     font-size: 2.5rem;    
     font-family: "Open sans";
 }
+
 .description > p{    
     text-align: center;
     margin-left: 15%;
@@ -198,6 +209,46 @@ ul.menutop li a:hover {
     font:  raleway;    
     font-family: "Open sans";
 }
+
+.description > h2{    
+    text-align: center;
+    color: #0529AB;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.2rem;
+    font:  raleway;    
+    font-family: "Open sans";
+}
+
+.Act > h2{    
+    text-align: left;
+    color: #0529AB;
+    margin-left: 5%;
+    margin-right: 15%;
+    font-size: 1.2rem;
+    font:  raleway;    
+    font-family: "Open sans";
+}
+
+.Act > h3{    
+    text-align: left;   
+    margin-left: 10%;
+    margin-right: 15%;
+    font-size: 1.2rem;
+    font:  raleway;    
+    font-family: "Open sans";
+}
+
+.Act > ul{    
+    text-align: left;
+    color: #0529AB;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    font:  raleway;    
+    font-family: "Open sans";
+}
+
 .items {
     display: flex;
     justify-content: space-between;
