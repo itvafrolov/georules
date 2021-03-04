@@ -38,8 +38,15 @@ body {
 .logo {
     width: 4rem;
 }
+.logo2 {
+    width: 6rem;
+}
 .logo>img{
     width: 4rem;
+    margin-left: 2rem;
+}
+.logo2>img{
+    width: 8rem;
     margin-left: 2rem;
 }
 .menutop {
@@ -356,6 +363,24 @@ p.dline {
     line-height: 1.5;
    }
 
+
+   .box-logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex-grow: 1;
+    justify-self:normal;
+   }
+
+   .logo-box {
+    width: 2rem;
+    margin: 6rem;
+}   
+
+.logo-box>img{
+    width: 8rem;
+    margin-left: 2rem;
+}
 
 /* Mobile */
 @media only screen and (max-width: 720px) {
