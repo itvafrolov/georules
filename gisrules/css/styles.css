@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {  
-    width: 20rem;
+    width: 15rem;
     margin: 0 auto;
   }
 .box {
@@ -19,8 +19,9 @@ body {
     margin-left: 0.1rem;
     margin-right: 0.1rem;
     margin-top:1rem;
-    padding-top: 5%;
-    padding-bottom: 5%;    
+    padding:  5%;
+    /* padding-top: 5%;
+    padding-bottom: 5%;     */
     font-family: "Open sans";
     justify-content: center;
     text-align: center;
@@ -134,7 +135,6 @@ ul.menutop li a:hover {
     text-align: left;
   }
   
-  /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
   }
@@ -143,8 +143,6 @@ ul.menutop li a:hover {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
-
 
 .main {
     margin-top: 5rem;
@@ -157,6 +155,17 @@ ul.menutop li a:hover {
 }
 
 .site-title {
+    background-image: url(../img/head_main.jpg);
+    background-size:cover;       
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+}
+
+.site-title-A {
     background-image: url(../img/head1.jpg);
     background-size:cover;       
     text-align: center;
@@ -173,7 +182,21 @@ ul.menutop li a:hover {
     text-shadow: 0 0 5px #000;
     height: 11rem;
 }
+
+.site-title-A > h2 {
+    color: #eee;
+    font-size: 280%;
+    text-shadow: 0 0 5px #000;
+    height: 11rem;
+}
+
 .site-title > p {
+    color: #0B0463;
+    font:  raleway;
+    font-size: 150%;    
+    font-family: "Open sans";
+}
+.site-title-A > p {
     color: #0B0463;
     font:  raleway;
     font-size: 150%;    
@@ -184,24 +207,31 @@ ul.menutop li a:hover {
     justify-content: space-between;
 }
 
-.description {
-    
+.description {    
     background-color: #f1f1f1;
     display: flex;
     flex-direction: column;    
     justify-content: center;
 }
 
-.Act {
-    
+.Act {    
     /* background-color: #f1f1f1; */
     display: flex;
     flex-direction: column;    
     justify-content: left;
+    font-family: "Open sans";
 }
 
-.description > h1{
-    
+.stattya{    
+    margin-left: 3em;
+    margin-right: 3em;
+    font-family: "Open sans";
+}
+
+.stattya-h3{
+    margin-top: 5rem;
+}
+.description > h1{    
     text-align: center;
     color: #0529AB;
     font:  raleway;
@@ -211,8 +241,8 @@ ul.menutop li a:hover {
 
 .description > p{    
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 3em;
+    margin-right: 3em;
     font:  raleway;    
     font-family: "Open sans";
 }
@@ -249,9 +279,16 @@ ul.menutop li a:hover {
 .Act > ul{    
     text-align: left;
     color: #0529AB;
-    margin-left: 15%;
-    margin-right: 15%;
-    
+    margin-left: 10rem;
+    margin-right: 3rem;    
+    font:  raleway;    
+    font-family: "Open sans";
+}
+
+.Act-ul{    
+    text-align: left;    
+    margin-left: 3rem;
+    margin-right: 3rem;    
     font:  raleway;    
     font-family: "Open sans";
 }
