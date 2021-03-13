@@ -9,6 +9,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>GEORULES</title>
+    <style>
+        .accordion {
+            background-color: #eee;
+            /* color: #444; */
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align:left;
+            outline: none;
+            font-size: 1.1rem;
+            transition: 0.4s;            
+        }
+
+        
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .panela {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        </style>
 </head>
 
 <body>
@@ -42,8 +81,9 @@
         <div class="stattya">
             <br id="zmist" /><br /><br /><br />
             <h1>Інтелектуальна геопросторова економічна система розвитку території</h1>
+            <br/
         </div>
-        <br><br /><br />
+        <!-- <br><br /><br />
         <div class="Act">
             <ul>
                 <li><a href="#actual"><b>Актуальність</b> </a></li>
@@ -52,9 +92,17 @@
                 <li><a href="#apparat"><b>Апаратно-інформаційна модель</b></a> </li>
                 <li><a href="#korist"><b>Формула корисної моделі</b></a> </li>
             </ul>
-        </div>
-        <div class="stattya">
-            <h3 id="actual"><br><br /><br />Актуальність</h3>
+        </div> -->
+
+        <!-- <div class="stattya"> -->
+<button class="accordion">Актуальність</button>
+<div class="panela">
+ 
+
+
+
+        <!-- <div class="stattya">
+            <h3 id="actual"><br><br /><br />Актуальність</h3> -->
             <p>В сучасних умовах наростання кризових явищ, негативного впливу зовнішніх і внутрішніх факторів, пандемії
                 COVID - 19,
                 стагнаційних процесах, які спостерігаються в економіці, особливе значення має застосування сучасних
@@ -65,7 +113,7 @@
                 і підходах теорії
                 економічного розвитку, використання технологій формування інтелекту і інструментарію інформаційних і
                 геоінформаційних систем.
-            </p>
+            </p>            
             <p>Проблемні явища, які проявляються в багатьох економіках держав, формують необхідність переосмислення
                 підходів до управління
                 економічними процесами на різних рівнях, особливо забезпечення дистанційної форми з використанням
@@ -78,7 +126,12 @@
                 <a href="#zmist"><br />На початок... </a>
             </p>
             <br /><br />
-            <h3 id="koncept"><br><br /><br />Суть концепції</h3>
+</div>
+
+<button class="accordion">Концепція</button>
+<div class="panela"> 
+
+            <!-- <h3 id="koncept"><br><br /><br />Суть концепції</h3> -->
             <p>Концепція базується на теоретико-методологічної платформою щодо визначення інтелектуальної геопросторової
                 економіки як системи,
                 яка включає інтелектуальні, інформаційні, геопросторові, економічні та безпекові елементи, спрямованих
@@ -88,9 +141,12 @@
                 особливості взаємодії стейкхолдерів, впливу зовнішніх та внутрішніх факторів, що формує цифрову
                 економічне середовище.
                 <a href="#zmist"><br />На початок... </a>
-
             </p>
-            <h3 id="elements"><br><br /><br />Eлементи інтелектуальної геопросторової економіки</h3>
+</div>
+
+<button class="accordion">Eлементи інтелектуальної геопросторової економіки</button>
+<div class="panela"> 
+            <!-- <h3 id="elements"><br><br /><br />Eлементи інтелектуальної геопросторової економіки</h3> -->
             <p>Охарактеризовані елементи інтелектуальної геопросторової економіки:
             </p>
             <p>інтелектуальний: формуються і використовуються системи розвитку інтелекту, які виступають «двигуном» і
@@ -305,7 +361,14 @@
             <p>Мал. 1.13 - Розробка методологічного підходу до інтегральної оцінки показників геопросторової економічної
                 системи.</p>
             <br />
-            <h3 id="apparat"><br><br /><br />Апаратно-інформаційна модель</h3>
+
+        </div>
+
+        <button class="accordion">Апаратно-інформаційна модель</button>
+        <div class="panela">
+
+
+            <!-- <h3 id="apparat"><br><br /><br />Апаратно-інформаційна модель</h3> -->
             <p>На основі використання представленої технології розробляються заходи щодо підвищення ефективності і
                 результативності, забезпечення розвитку системи,
                 визначення і реалізації стратегічних контурів розвитку системи.
@@ -531,7 +594,13 @@
                 використанням комплексу сучасних інтелектуальних, інформаційних, геоінформаційних технологій і
                 математичного апарату.</p>
             <a href="#zmist"><br />На початок... </a>
-            <h3 id="korist"><br><br /><br />Формула корисної моделі</h3>
+
+        </div>
+
+        <button class="accordion">Формула корисної моделі</button>
+        <div class="panela">
+
+            <!-- <h3 id="korist"><br><br /><br />Формула корисної моделі</h3> -->
             <p>Апаратно-інформаційна модель визначення рівня розвитку інтелектуальної геопросторової економіки на
                 відповідному рівні формує системне середовище
                 інформаційного забезпечення розвитку інтелектуальної геопросторової економіки, забезпечує реалізацію
@@ -557,6 +626,10 @@
             <a href="#zmist"><br />На початок... </a>
             <br /><br />
         </div>
+    
+
+        </div>
+        <br><br /><br />
         <div class="footer">
             <div class="panel panel-contacts">
                 <h2 id="contacts">Контакти</h2>
@@ -582,6 +655,24 @@
             &copy; GISAPR Company - 2021
         </div>
     </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+
+
 </body>
 
 </html>

@@ -246,7 +246,14 @@ ul.menutop li a:hover {
     font:  raleway;    
     font-family: "Open sans";
 }
-
+.description1{    
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    font:  raleway;    
+    font-family: "Open sans";
+    font-size: 1.1rem;
+}
 .description > h2{    
     text-align: center;
     color: #0529AB;
