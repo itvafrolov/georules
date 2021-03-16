@@ -3,7 +3,9 @@ body {
     font-size: 17px;
     font-family: Helvetica, Arial,  sans-serif;    
 }
-
+.menutopmobile{
+    display: none;
+}
 .box-wrappers{
     display: flex;
     align-items: center;
@@ -51,6 +53,7 @@ body {
     margin-left: 2rem;
 }
 .menutop {
+    
     display: flex;
     align-items: center;
     justify-content:space-between ;
@@ -60,6 +63,9 @@ body {
     width: 100%;
     background-color: #f1f1f1;
 }
+
+
+
 .menutop-text {
     display: flex;
     align-items:center;
@@ -436,17 +442,41 @@ p.dline {
 
 /* Mobile */
 @media only screen and (max-width: 720px) {
-    
-    .menutop {
-        flex-flow: column nowrap;
-        background-color: #0087ee9d;
+    body {
+        font-size: 12px;
+        font-family: Helvetica, Arial,  sans-serif;    
     }
 
+    .menutop {
+        flex-flow: column wrap;
+        background-color: #0087ee9d; 
+    }
+    
+    .menutopmobile{
+        flex-flow: column wrap;
+        background-color: #b8bfc59b;
+    }
+
+    .menutopmobile{    
+            display: flex;
+            align-items:unset;
+            justify-content:space-between ;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #b1bdc0c0;
+        }
+
+
     .logo {
-        height: 2rem;
+        height: 12rem;
         margin: 0;
     }   
-
+    .logo-box>img{
+        width: 18rem;
+        margin-left: 3rem;
+    }
 
     .site-title>h1 {
         text-align: center;
