@@ -6,6 +6,104 @@ body {
 .menutopmobile{
     display: none;
 }
+.mmenu{
+    display: none;
+}
+
+header{
+    /*margin-top: 200px;*/
+    font-family: Cuprum, Arial, Helvetica, sans-serif;
+   }
+   .mmenu *{
+    margin: 0;
+    padding: 0;
+   }
+   .mmenu ul,
+   .mmenu ol{
+    list-style: none;
+   }
+   .mmenu > ul{
+    display: flex;
+    justify-content: center;
+   }
+   .mmenu > ul li{
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+   }
+   .mmenu > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+   }
+   .mmenu > ul li:last-child{
+    border-right: 1px solid #babbbd;
+   }
+   .mmenu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+   }
+   .mmenu > ul li a{
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+    background: rgb(201,201,201); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
+   
+    padding: 15px 30px 15px 40px;
+    font-size: 14px;
+    color: #454547;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: all 0.3s ease;
+   }
+   .mmenu li a:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+    background: rgb(224,225,229); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(224,225,229,1) 0%, rgba(69,69,71,1) 2%, rgba(69,69,71,1) 98%, rgba(224,225,229,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e1e5', endColorstr='#e0e1e5',GradientType=0 ); /* IE6-9 */
+   
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+   }
+   
+   /*sub menu*/
+   .mmenu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+   }
+   .mmenu li > ul li{
+    border: 1px solid #c7c8ca;
+   }
+   .mmenu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+   }
+   .mmenu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0;
+   }
+   .mmenu li:hover > ul{
+    display: block;
+   }
+   
+
+
+
+
+/*----------------------------------------*/
+
+
+
+
+
 .box-wrappers{
     display: flex;
     align-items: center;
@@ -85,18 +183,18 @@ body {
     text-decoration: none;
     margin-right: 1rem;    
 }
-ul.menutop {
+nav.menutop {
     list-style: none;
 }
-ul.menutop li {
+nav.menutop li {
     display: inline;
     font-size: 1rem;
 }
-ul.menutop li a {
+nav.menutop li a {
     color: #0275d8;
     text-decoration: none;
 }
-ul.menutop li a:hover {
+nav.menutop li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
@@ -448,16 +546,18 @@ p.dline {
     }
 
     .menutop {
-        flex-flow: column wrap;
-        background-color: #0087ee9d; 
+        display: none;
     }
     
-    .menutopmobile{
+    .mmenu{
         flex-flow: column wrap;
         background-color: #b8bfc59b;
     }
 
-    .menutopmobile{    
+    .mmenu{    
+        
+            overflow: hidden;
+           
             display: flex;
             align-items:unset;
             justify-content:space-between ;
@@ -517,4 +617,86 @@ p.dline {
     .panel-contacts {
         padding: 1.5rem 0;
     }
+
+.mmenu [type="checkbox"],
+.mmenu label.toggleSubmenu{
+ /*display: none;*/
+}
+.mmenu label.toggleMenu{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+ background: rgb(201,201,201); /* Old browsers */
+ background: -moz-linear-gradient(top,  rgba(201,201,201,1) 0%, rgba(246,246,246,1) 2%, rgba(196,197,199,1) 98%, rgba(117,117,119,1) 100%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#757577',GradientType=0 ); /* IE6-9 */
+
+ display: none;
+ padding: 15px 40px;
+ text-transform: uppercase;
+ font-size: 14px;
+ cursor: pointer;
+ position: relative;
+}
+
+.mmenu label.toggleMenu .fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+@media all and (max-width: 800px){
+ .mmenu{
+  overflow: hidden;
+ }
+ .mmenu ul{
+  display: block;
+  max-height: 0;
+  transition: max-height 0.3s;
+ }
+ .mmenu li>ul li ul{
+  position: absolute;
+  right: auto;
+  top: auto;
+ }
+ .mmenu label.toggleMenu{
+  display: block;
+ }
+ input.toggleMenu:checked + label.toggleMenu{
+  background: #000;
+  color: #fff;
+ }
+ input.toggleMenu:checked ~ ul,
+ input.toggleSubmenu:checked ~ ul{
+  display: block;
+  position: relative;
+  max-height: 5000px;
+  transition: max-height 2s ease-in;
+ }
+ .mmenu label.toggleSubmenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: block;
+ }
+ input.toggleSubmenu:checked ~ a{
+  background: #454547;
+  color: #fff;
+ }
+ .mmenu label.toggleSubmenu .fa:before{
+  content: "\f0d7";
+  color: #454547;
+ }
+ .mmenu label.toggleSubmenu .fa{
+  position: absolute;
+  top: 15px;
+  right: 30px;
+ }
+ .mmenu input.toggleSubmenu:checked ~ label.toggleSubmenu .fa::before{
+  content: "\f0d8";
+  color: #ffffff;
+ }
+}
 }
