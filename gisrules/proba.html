@@ -3,83 +3,84 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+
+.mobile-wrap {
+  /* max-width: 1052px; */
+  margin: auto;
+  background-color: #5d4037;
+  height: 450px;
+  color: #fff;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+.nav-wrap {
+  overflow: hidden;
+  background-color: #ddd;
+  position: relative;
 }
 
-.dropdown {
-    /* float: right; */
-    position: relative;
-    display: inline-block;
+.nav-wrap #navLinks {
+
+display: none;
+
+}
+.nav-wrap a {
+  color: #fff;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.nav-wrap a.icon {
+  background: #212121;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav-wrap a:hover {
+   background-color: #d7ccc8;
+  color: #000;
+}
+.active {
+  background-color: #7c4dff;
+  color: #fff;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 0px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: 0;
-    z-index: 2;
+section {
+
+padding-left: 16px;
+
 }
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
 </style>
 </head>
 <body>
+  <div class="mobile-wrap">
+    <div class="nav-wrap">
+      <a href="#home" class="active">Логотип</a>
+      <nav id="navLinks">
+        <a href="uk/association.html">Асоціація</a>
+        <a href="#work">Услуги</a>
+        <a href="#contact">Контакты</a>   </nav>
+      <a href="#" class="icon" onclick="barFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <section>
+      <h3>Вертикальное мобильное меню</h3>
+      <p>Демонстрация примера, как может выглядеть меню для мобильной версии сайта.</p>
+      <p>При клике по иконке гамбургер-меню, появится меню сайта.</p>
+    </section>
 
-<h2>Aligned Dropdown Content</h2>
-<p>Use <strong>float: right</strong> on the dropdown class to float the dropdown menu to the right, and <strong>right:0</strong> on the dropdown-content if you want the dropdown content to go from right to left.</p>
-
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+ function barFunction() {
+  var x = document.getElementById("navLinks");
+  if (x.style.display === "block") {
+  x.style.display = "none";
+  } else {
+  x.style.display = "block";
   }
 }
 </script>

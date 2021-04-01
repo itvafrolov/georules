@@ -53,21 +53,20 @@
       </div>
   </div>
     <div class="dropdown">
-      <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
-      <div class="container dropbtn"  id="myB" onclick="myFunction(this)">
-        <div><br/><br/></div>
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>  
-      <div id="myDropdown" class="dropdown-content">
-          <a href="#home">Home</a>
-          <a href="uk/association.html">About</a>
-          <a href="#contacts">Contact</a>
-        </div>
+      <button onclick="barFunction()" class="dropbtn">
+      <!-- <div class="container dropbtn"  id="myB" onclick="myFunction()"> -->
+        <p class="bar1"></p>
+        <p class="bar2"></p>
+        <p class="bar3"></p>
+      </div>  </button>
+       
       </div>
   </nav>
-
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="uk/association.html">About</a>
+    <a href="#contacts">Contact</a>
+  </div>
 
 
 
@@ -114,11 +113,18 @@
   </div>
 
   <script>
-
-    function myFunction() {
-        document.getElementById('myB').classList.toggle("change");
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
+ function barFunction() {
+  var x = document.getElementById("myDropdown");
+  if (x.style.display === "block") {
+  x.style.display = "none";
+  } else {
+  x.style.display = "block";
+  }
+}
+//     function myFunction() {
+//         // document.getElementById('myB').classList.toggle("change");
+//         document.getElementById("myDropdown").classList.toggle("show");
+//     }
 
 //     window.onclick = function(event) {
 //       if (!event.target.matches('.dropbtn')) {
@@ -129,7 +135,7 @@
 //       var openDropdown = dropdowns[i];
 //       if (openDropdown.classList.contains('show')) {
 //         openDropdown.classList.remove('show');
-//         document.getElementById('myB').classList.toggle("change");
+//         // document.getElementById('myB').classList.toggle("change");
 //       }
 //     }
 //   }
