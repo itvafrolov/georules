@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mstyles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>GEORULES</title>
@@ -37,7 +38,35 @@
         </div>
     </nav>
 
+    <nav class="mmenu">
+        <div class="logo">
+          <a class="logo" href="#">
+              <img src="../img/logo4-3.jpg" alt="" />
+          </a>        
+      </div>
+      <div class="menutop-lang-blok">
+        <div class="menutop-text">
+          <li><a class="menutop-lang" href="#">UK</a></li>
+          <li><a class="menutop-lang" href="#">RU</a></li>
+          <li><a class="menutop-lang" href="#">EN</a></li>
+        </div>
+    </div>
+      <div class="dropdown">
+        <button onclick="barFunction()" class="dropbtn">
+        <!-- <div class="container dropbtn"  id="myB" onclick="myFunction()"> -->
+          <p class="bar1"></p>
+          <p class="bar2"></p>
+          <p class="bar3"></p>
+        </div>  </button>
+         
+        </div>
+    </nav>
+    <div id="mDropdown" class="dropdown-content">
+      <a href="#home"><h3>Головна</h3></a>
+      <a href="uk/association.html">Асоціація</a>
   
+      <a href="#contacts">Контакти</a>
+    </div>
     <div class="main">
         <div class="site-title-A">
             <h2>INTERNATIONAL TERRITORIAL DEVELOPMENT ASSOCIATION</h2>
@@ -132,6 +161,25 @@
         </div>
     </div>
 </div>
+<script>
+    function barFunction() {
+     var x = document.getElementById("mDropdown");
+     if (x.style.display === "block") {
+     
+     x.style.display = "none";
+     } else {
+       
+     x.style.display = "block";  
+     }
+   
+     //- - - -  обработка дальнейшего клика
+     window.onclick = function(event) {
+       if (document.getElementsByClassName('dropdown-content')[0].contains(event.target)){
+           x.style.display = "none";      
+       }  
+     }
+   }
+   </script> 
 </body>
 
 </html>
