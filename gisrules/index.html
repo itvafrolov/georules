@@ -38,7 +38,6 @@
         </div>
     </nav>
 
-
   <nav class="mmenu">
       <div class="logo">
         <a class="logo" href="#">
@@ -62,10 +61,11 @@
        
       </div>
   </nav>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="uk/association.html">About</a>
-    <a href="#contacts">Contact</a>
+  <div id="mDropdown" class="dropdown-content">
+    <a href="#home"><h3>Головна</h3></a>
+    <a href="uk/association.html">Асоціація</a>
+
+    <a href="#contacts">Контакти</a>
   </div>
 
 
@@ -114,57 +114,22 @@
 
   <script>
  function barFunction() {
-  var x = document.getElementById("myDropdown");
+  var x = document.getElementById("mDropdown");
   if (x.style.display === "block") {
+  
   x.style.display = "none";
   } else {
-  x.style.display = "block";
-  alert('ку-ку');
+    
+  x.style.display = "block";  
   }
 
+  //- - - -  обработка дальнейшего клика
+  window.onclick = function(event) {
+    if (document.getElementsByClassName('dropdown-content')[0].contains(event.target)){
+        x.style.display = "none";      
+    }  
+  }
 }
-//     function myFunction() {
-//         // document.getElementById('myB').classList.toggle("change");
-//         document.getElementById("myDropdown").classList.toggle("show");
-//     }
-
-//     window.onclick = function(event) {
-//       if (!event.target.matches('.dropbtn')) {
-
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//         // document.getElementById('myB').classList.toggle("change");
-//       }
-//     }
-//   }
-// }
-    </script>
-
-  <!-- <script>    
-    function myFunction() {
-      document.getElementById('myB').classList.toggle("change");       
-  //       document.getElementById("myDropdown").classList.toggle("show");
-  //       }
-  //       window.onclick = function(event) {
-  //       if (!event.target.matches('.container')) {
-  //     var dropdowns = document.getElementsByClassName("dropdown-content");
-  //     var i;
-  //     for (i = 0; i < dropdowns.length; i++) {
-  //       var openDropdown = dropdowns[i];
-  //       if (openDropdown.classList.contains('show')) {
-  //           openDropdown.classList.remove('show');
-  //     }
-  //   }
-  // }
-//} 
-</script> -->
-
-</body> 
-
-
-
+</script> 
+</body>
 </html>

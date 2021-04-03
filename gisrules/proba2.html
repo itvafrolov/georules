@@ -1,91 +1,106 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+  <meta charset="utf-8">
+  <style>
+    #field {
+      width: 200px;
+      height: 150px;
+      border: 10px groove black;
+      background-color: #00FF00;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
 
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
-}
-
-.dropdown {
-    float: right;
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 800px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: 0;
-    z-index: 2;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-</style>
+    #ball {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -20px;
+      margin-top: -20px;
+      transition: 1s;
+    }
+  </style>
 </head>
-<body>
 
-<h2>Aligned Dropdown Content</h2>
-<p>Use <strong>float: right</strong> on the dropdown class to float the dropdown menu to the right, and <strong>right:0</strong> on the dropdown-content if you want the dropdown content to go from right to left.</p>
+<body style="height:2000px">
 
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+  Кликните на любое место поля, чтобы мяч перелетел туда.
+  <br> Мяч никогда не вылетит за границы поля.
+
+
+  <div id="field">
+    <img src="https://js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
   </div>
-</div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+	var field = document.getElementById('field');
+	var ball = document.getElementById('ball');
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+	document.onclick = function (e) {
+		var coord = field.getBoundingClientRect();
+		var border = (field.offsetWidth - field.clientWidth)/2;
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+		if((e.clientX > coord.left && e.clientX < coord.right) && (e.clientY > coord.top && e.clientY < coord.bottom)) {
+			var widthBall = ball.clientWidth;
+			var heightBall = ball.clientHeight;
+
+			ball.style.marginLeft = 0;
+			ball.style.marginTop = 0;
+
+			var left = e.clientX - coord.left - border - widthBall/2 + 'px';
+			var top = e.clientY - coord.top - border - heightBall/2 + 'px';
+
+			var elemLeft = e.clientX < coord.left + border + widthBall/2;
+			var elemTop = e.clientY < coord.top + border + widthBall/2;
+			var elemRight = e.clientX > coord.right - border - widthBall/2;
+			var elemBottom = e.clientY > coord.bottom - border - widthBall/2;
+
+			var cornerPositionLeft = field.clientWidth - widthBall + 'px';
+			var cornerPositionTop = field.clientHeight - widthBall + 'px';
+
+			if(elemLeft && elemBottom) {
+				ball.style.left = 0;
+				ball.style.top = cornerPositionTop;
+
+			} else if(elemLeft && elemTop) {
+				ball.style.left = 0;
+				ball.style.top = 0;
+
+			} else if(elemRight && elemTop) {
+				ball.style.left =  cornerPositionLeft;
+				ball.style.top = 0;
+
+			} else if(elemRight && elemBottom) {
+				ball.style.left =  cornerPositionLeft;
+				ball.style.top = cornerPositionTop;
+
+			} else if(elemLeft) {
+				ball.style.left = 0;
+				ball.style.top = top;
+
+			} else if(elemRight) {
+				ball.style.left =  cornerPositionLeft;
+				ball.style.top = top;
+
+			} else if(elemTop) {
+				ball.style.left = left;
+				ball.style.top = 0;
+
+			} else if(elemBottom) {
+				ball.style.left = left;
+				ball.style.top = cornerPositionTop;
+
+			} else {
+				ball.style.left = left;
+				ball.style.top = top;
+			}
+		}
+	}
 </script>
-
 </body>
+
 </html>
-
-
-
