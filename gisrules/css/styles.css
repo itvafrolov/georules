@@ -179,12 +179,7 @@ nav.menutop li a:hover {
     justify-content: space-between;
 }
 
-.description {    
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column;    
-    justify-content: center;
-}
+
 
 .Act {    
     /* background-color: #f1f1f1; */
@@ -203,6 +198,13 @@ nav.menutop li a:hover {
 .stattya-h3{
     margin-top: 5rem;
 }
+
+.description {    
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+}
 .description > h1{    
     text-align: center;
     color: #0529AB;
@@ -218,14 +220,7 @@ nav.menutop li a:hover {
     font:  raleway;    
     font-family: "Open sans";
 }
-.description1{    
-    text-align: center;
-    margin-left: 3em;
-    margin-right: 3em;
-    font:  raleway;    
-    font-family: "Open sans";
-    font-size: 1.1rem;
-}
+
 .description > h2{    
     text-align: center;
     color: #0529AB;
@@ -235,7 +230,14 @@ nav.menutop li a:hover {
     font:  raleway;    
     font-family: "Open sans";
 }
-
+.description1{    
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    font:  raleway;    
+    font-family: "Open sans";
+    font-size: 1.1rem;
+}
 .Act > h2{    
     text-align: left;
     color: #0529AB;
@@ -374,5 +376,50 @@ nav.menutop li a:hover {
 .dropdown-content{
     display: none;
 }
+/* ------ Projects --------- */
+
+.accordion {
+    background-color: #eee;
+    /* color: #444; */
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align:left;
+    outline: none;
+    font-size: 1.1rem;
+    transition: 0.4s;            
+}
 
 
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panela {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font:  raleway;    
+    font-family: "Open sans";
+    font-size: 1rem;
+}
+
+.proj_img{
+    width: 100%;
+    display: block;
+}

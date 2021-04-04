@@ -12,66 +12,31 @@
     <title>GEORULES</title>
     <style>
 
-        .accordion {
-            background-color: #eee;
-            /* color: #444; */
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            text-align:left;
-            outline: none;
-            font-size: 1.1rem;
-            transition: 0.4s;            
-        }
 
-        
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-        
-        .accordion:after {
-            content: '\002B';
-            color: #777;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
-        
-        .active:after {
-            content: "\2212";
-        }
-        
-        .panela {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
         </style>
 </head>
 
 <body>
     <nav class="menutop">
         <div class="logo">
-            <a class="logo" href="../index.html">
+            <a class="logo" href="#">
                 <img src="../img/logo4-3.jpg" alt="" />
             </a>
         </div>
         <div class="menutop-text">
-            <li><a class="menutop-element" href="../index.html">Головна</a></li>
-            <li><a class="menutop-element" href="news.html">Новини</a></li>
-            <li><a class="menutop-element" href="#">Проект</a></li>
-            <li><a class="menutop-element" href="association.html">Про Асоціацію</a></li>
+            <li><a class="menutop-element" href="../index.html">Головна</a></li> 
+            <li><a class="menutop-element" href="association.html">Асоціація</a></li>
+            <li><a class="menutop-element" href="project.html">Проект</a></li>
+            <li><a class="menutop-element" href="news.html">Анонси<br></a></li>
+            <li><a class="menutop-element" href="archive.html">Архів<br></a></li>            
             <li><a class="menutop-element" href="http://gtdrjournal.com/" target="_blank">Журнал Geoeconomics</a></li>
         </div>
         <div class="menutop-lang-blok">
             <div class="menutop-text">
-                <li><a class="menutop-lang" href="#">UK</a></li>
-                <li><a class="menutop-lang" href="#">RU</a></li>
-                <li><a class="menutop-lang" href="#">EN</a></li>
-            </div>
+            <li><a class="menutop-lang" href="#">UK</a></li>
+            <li><a class="menutop-lang" href="#">RU</a></li>
+            <li><a class="menutop-lang" href="#">EN</a></li>
+        </div>
         </div>
         <div class="menutop-text">
             <li><a class="menutop-element" href="#contacts">Контакти</a></li>
@@ -82,7 +47,7 @@
     <nav class="mmenu">
         <div class="logo">
           <a class="logo" href="#">
-              <img src="img/logo4-3.jpg" alt="" />
+              <img src="../img/logo4-3.jpg" alt="" />
           </a>        
       </div>
       <div class="menutop-lang-blok">
@@ -93,22 +58,22 @@
         </div>
     </div>
       <div class="dropdown">
-        <button onclick="barFunction()" class="dropbtn">
-        <!-- <div class="container dropbtn"  id="myB" onclick="myFunction()"> -->
+        <button onclick="barFunction()" class="dropbtn">   
           <p class="bar1"></p>
           <p class="bar2"></p>
           <p class="bar3"></p>
-        </div>  </button>
-         
+        </div>  </button>         
         </div>
-    </nav>
+    </nav>    
     <div id="mDropdown" class="dropdown-content">
-      <a href="#home"><h3>Головна</h3></a>
-      <a href="uk/association.html">Асоціація</a>
-  
-      <a href="#contacts">Контакти</a>
+        <a class="menutop-element"  href="../index.html">Головна</a>
+        <a class="menutop-element" href="association.html">Асоціація</a>
+        <a class="menutop-element" href="project.html">Проект</a>
+        <a class="menutop-element" href="news.html">Новини<br></a>
+        <a class="menutop-element" href="ads.html">Об’яви<br></a>
+        <a href="#contacts">Контакти</a>
+        <a href="#contacts">Вхід/Рєєстрація</a>
     </div>
-
     <div class="main">
         <div class="stattya">
             <br id="zmist" /><br /><br /><br />
@@ -218,7 +183,7 @@
             </ul>
             <br />
             <p>На економічному рівні розробляється аналітико-діагностична система показників (мал. 1.1).</p>
-            <img src="img/r1_01.jpg">
+            <img class ="proj_img"  src="img/r1_01.jpg">
             <p>Мал. 1.1 - Аналітично-діагностична система показників в інтелектуальної геопросторової економіки</p>
             <br />
             <p>На локальному рівні визначаються локальні показники з використанням експертних і кількісних методів
@@ -265,13 +230,13 @@
                 безпеку.</p>
             <br />
             <p>Загальна схема формування інтелектуальної геопросторової економіки представлена на мал. 1.2.</p>
-            <img src="img/r1_02.jpg">
+            <img class ="proj_img"  src="img/r1_02.jpg">
             <p>Мал. 1.2 - Загальна схема формування інтелектуальної геопросторової економіки</p>
             <br />
             <p>Геопросторова складова формується і реалізується на основі алгоритму розробки та роботи баз геоданіх
                 показників інтелектуальної геопросторової економіки:</p>
             <br />
-            <img src="img/r1_03.jpg">
+            <img class ="proj_img"  src="img/r1_03.jpg">
             <p>Мал. 1.3 - Алгоритм розробки і роботи баз геоданіх показників інтелектуальної геопросторової економіки
             </p>
             <br />
@@ -304,37 +269,37 @@
             </ol>
             <p>Алгоритм реалізації ГІС інтелектуальної геопросторової економіки представлені на мал 1.4.</p>
             <br />
-            <img src="img/r1_04.jpg">
+            <img class ="proj_img" src="img/r1_04.jpg">
             <p>Мал. 1.4 - Алгоритм реалізації ГІС інтелектуальної геопросторової економіки</p>
             <br />
             <p>Приклади використання ГІС інтелектуальної геопросторової економіки на регіональному рівні представлено на
                 мал. 1.5 - 1.11.</p>
             <br />
-            <img src="img/r1_05.png">
+            <img class ="proj_img"  src="img/r1_05.png">
             <p>Мал. 1.5 - Геоінформаційна карта узагальнюючих просторових показників територіального розвитку
                 використання земель регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
-            <img src="img/r1_06.png">
+            <img class ="proj_img"  src="img/r1_06.png">
             <p>Мал. 1.6 - Геоінформаційна карта узагальнюючих містобудівних показників територіального розвитку
                 використання земель регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
-            <img src="img/r1_07.png">
+            <img class ="proj_img"  src="img/r1_07.png">
             <p>Мал. 1.7 - Геоінформаційна карта узагальнюючих інвестиційних показників територіального розвитку
                 використання земель регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
-            <img src="img/r1_08.png">
+            <img class ="proj_img" src="img/r1_08.png">
             <p>Мал. 1.8 - Геоінформаційна карта узагальнюючих екологічних показників територіального розвитку
                 використання земель регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
-            <img src="img/r1_09.png">
+            <img class ="proj_img" src="img/r1_09.png">
             <p>Мал. 1.9 - Геоінформаційна карта інтегральних показників територіального розвитку використання земель
                 регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
-            <img src="img/r1_10.png">
+            <img class ="proj_img" src="img/r1_10.png">
             <p>Мал. 1.10 - Геоінформаційна 3-D модель моніторингу стану територіального розвитку використання земель
                 регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
-            <img src="img/r1_11.png">
+            <img class ="proj_img" src="img/r1_11.png">
             <p>Мал. 1.11 - Геоінформаційна 3-D модель моніторингу стану і прогнозних тенденцій територіального розвитку
                 використання земель регіонів в системі інтелектуальної геопросторової економіки</p>
             <br />
@@ -372,13 +337,13 @@
             </ul>
             </p>
             <br />
-            <img src="img/r1_12.jpg">
+            <img class ="proj_img" src="img/r1_12.jpg">
             <p>Мал. 1.12 - Загальна схема технології розробки інформаційного рівня інтелектуальної геопросторової
                 економічної системи
                 даних, їх прогнозування, розвитку штучного інтелекту, геоінформаційних систем, систем інформаційної
                 безпеки;</p>
             <br />
-            <img src="img/r1_13.jpg">
+            <img class ="proj_img" src="img/r1_13.jpg">
             <p>Мал. 1.13 - Розробка методологічного підходу до інтегральної оцінки показників геопросторової економічної
                 системи.</p>
             <br />
@@ -465,7 +430,7 @@
 
                 </p>
                 <br />
-                <img src="img/r1_14.jpg">
+                <img class ="proj_img" src="img/r1_14.jpg">
                 <p>Мал. 1.14 - Апаратно-інформаційна модель рівня розвитку інтелектуальної геопросторової економіки на
                     відповідному рівні</p>
                 <br />
