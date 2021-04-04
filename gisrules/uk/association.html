@@ -61,13 +61,15 @@
         </div>
     </nav>    
     <div id="mDropdown" class="dropdown-content">
+        <a class="menutop-element"  href="#">На початок</a>
         <a class="menutop-element"  href="../index.html">Головна</a>
         <a class="menutop-element" href="association.html">Асоціація</a>
         <a class="menutop-element" href="project.html">Проект</a>
-        <a class="menutop-element" href="news.html">Новини<br></a>
-        <a class="menutop-element" href="ads.html">Об’яви<br></a>
-        <a href="#contacts">Контакти</a>
-        <a href="#contacts">Вхід/Рєєстрація</a>
+        <a class="menutop-element" href="news.html">Анонси<br></a>
+        <a class="menutop-element" href="archive.html">Архів<br></a>
+        <a class="menutop-element" href="http://gtdrjournal.com/" target="_blank">Журнал Geoeconomics</a>
+        <a href="#mcontacts">Контакти</a>
+        <a href="#mcontacts">Вхід/Рєєстрація</a>
     </div>
 
     <div class="main">
@@ -139,6 +141,7 @@
             </p>
             <br/>
         </div>   
+        <div id="mcontacts"><br /><br /><br /></div>
         <div class="footer">
             <div class="panel panel-contacts">
                 <h2 id="contacts">Контакти</h2>
@@ -166,6 +169,7 @@
 </div>
 <script>
     function barFunction() {
+     window.scrollTo(0, 0);
      var x = document.getElementById("mDropdown");
      if (x.style.display === "block") {
      

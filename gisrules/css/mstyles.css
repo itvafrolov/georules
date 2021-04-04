@@ -5,16 +5,19 @@
         font-size: 12px;
         font-family: Helvetica, Arial,  sans-serif;    
     }
+    .main {
+        margin-top: 3rem;
+    }
 
     .menutop {
         display: none;
     }
-    
+        
     .mmenu{           
             display: flex;
             flex-direction: row;           
             justify-content:space-between ;
-            height: 5rem;
+            height: 3.5rem;
             position: fixed;
             top: 0;
             width: 100%;
@@ -31,14 +34,14 @@
         align-items:center;        
         font-size: 1rem;
         color: #01447a;;
-        margin-left: 5rem;
+        margin-left: 4rem;
     }   
     .logo {
-        height: 12rem;
+        height: 3rem;
         margin: 0;
     }   
     .logo>img{
-        /* width: 18rem; */
+        width: 3rem;
         margin-left: 0.5rem;
     }
 
@@ -51,7 +54,7 @@
         justify-content: center;
         margin: 0;
         border-width: inherit;
-    border-color: #000;
+        border-color: #000;
     }
 
     .sidebar {
@@ -150,11 +153,11 @@
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 25px;
+    height: 3px;
     background-color: #333;
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 0.8s;
 }
 
 
@@ -180,8 +183,8 @@
 
 .dropbtn {
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 0.8rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
 }
@@ -191,10 +194,11 @@
     float: right;
     position: relative;
     display:inline-flexbox;
+    margin-right: 0.8rem;
 }   
 
 .dropdown-content {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: none;
     position: relative;    
     justify-content: center;
@@ -203,7 +207,7 @@
     overflow: auto;
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     right: 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     z-index: 1;
     /* text-align: center; */
 }
@@ -211,7 +215,7 @@
 .dropdown-content a {
     color: black;
     /* border: 0.1px outset #6B6B6C; */
-    padding: 0.7rem 1.5rem;    
+    padding: 0.7rem 4rem;    
     /* padding: 12px ; */
     text-decoration: none;
     display: block;
@@ -221,4 +225,32 @@
 
 .show {display: block;}
 
+/*--------- New && Archive --------*/
+.Act {    
+    /* background-color: #f1f1f1; */
+    display: flex;
+    flex-direction: column;    
+    justify-content: left;
+    font-family: "Open sans";
 }
+.Act>ul{    
+    text-align: left;    
+    margin-left: 4rem;
+    margin-right: 2rem;    
+    font:  raleway;    
+    font-family: "Open sans";
+    font-size: 1rem;
+}
+
+.Act-2{    
+    text-align: left;    
+    margin-left: 2rem;
+    margin-right: 3rem;    
+    font:  raleway;    
+    font-family: "Open sans";
+    font-size: 1rem;
+}
+
+
+}
+
