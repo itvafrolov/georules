@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>GEORULES</title>
+</head>
+
+<body>
+   <nav class="menutop">
+        <div class="logo">
+            <a class="logo" href="#">
+                <img src="../img/logo4-3.jpg" alt="" />
+            </a>
+        </div>
+        <div class="menutop-text">
+            <li><a class="menutop-element" href="e_association.html">Association</a></li>
+            <li><a class="menutop-element" href="e_project.html">Project</a></li>
+            <li><a class="menutop-element" href="e_news.html">Announcement<br></a></li>
+            <li><a class="menutop-element" href="e_archive.html">Archive<br></a></li>            
+            <li><a class="menutop-element" href="http://gtdrjournal.com/" target="_blank">Geoeconomics Journal</a></li>
+        </div>
+        <div class="menutop-lang-blok">
+            <div class="menutop-text">
+            <li><a class="menutop-lang" href="../uk/main.html">UK</a></li>
+            <li><a class="menutop-lang" href="../ru/r_main.html">RU</a></li>
+            <li><a class="menutop-lang" href="#">EN</a></li>
+        </div>
+        </div>
+        <div class="menutop-text">
+            <li><a class="menutop-element" href="#contacts">Contacts</a></li>
+            <li><a class="menutop-element" href="#contacts">Login/Registration</a></li>
+        </div>
+    </nav>
+
+    <nav class="mmenu">
+        <div class="logo">
+          <a class="logo" href="#">
+              <img src="../img/logo4-3.jpg" alt="" />
+          </a>        
+      </div>
+      <div class="menutop-lang-blok">
+        <div class="menutop-text">
+            <li><a class="menutop-lang" href="../uk/main.html">UK</a></li>
+            <li><a class="menutop-lang" href="../ru/r_main.html">RU</a></li>
+            <li><a class="menutop-lang" href="#">EN</a></li>
+        </div>
+    </div>
+      <div class="dropdown">
+        <button onclick="barFunction()" class="dropbtn">   
+          <p class="bar1"></p>
+          <p class="bar2"></p>
+          <p class="bar3"></p>
+        </button>         
+        </div>
+    </nav>    
+    <div id="mDropdown" class="dropdown-content">
+        <a class="menutop-element" href="#">To begin</a>
+        <a class="menutop-element" href="e_association.html">Association</a>
+        <a class="menutop-element" href="e_project.html">Project</a>
+        <a class="menutop-element" href="e_news.html">Announcement<br></a>
+        <a class="menutop-element" href="e_archive.html">Archive<br></a>
+        <a class="menutop-element" href="http://gtdrjournal.com/" target="_blank">Geoeconomics Journal</a>
+        <a href="#mcontacts">Contacts</a>
+        <a href="#mcontacts">Login/Registration</a>
+    </div>
+
+    <div class="main">
+        <div class="site-title">
+            <h1>Intelligent Geospatial Economics</h1>
+            <p>INNOVATIVE TECHNOLOGIES FOR SUSTAINABLE DEVELOPMENT OF TERRITORIES</p>
+        </div>
+        <div class="description1">
+            <br />
+            <br />
+            <p> Intelligent geospatial economy is a new innovation and investment product with the application of modern 
+                digital and geospatial technologies, mathematical modeling, artificial intelligence which takes into 
+                account spatial, urban planning, investment, infrastructure, social and other territorial particularities. 
+                Intelligent geospatial economy provides an increase in the efficiency of use of territories, allows to 
+                attract investment resources, develop and implement strategies for territorial development, execute 
+                infrastructure, social and other projects. The International Association for the Sustainable Development 
+                of Territories unites partners and provides interaction between foreign and domestic stakeholders to 
+                solve issues on sustainable development of territories.
+            </p>
+            <br /><br />
+        </div>
+        <div id="mcontacts"><br /><br /><br /></div>
+        <div class="footer">
+            <div class="panel panel-contacts">
+                <h2 id="contacts">Contacts</h2>
+                <p>+38 (098) 262-94-59</p>
+                <p>+38 (050) 981-61-12</p>
+                <p>e-mail: Intellectgeospates@gmail.com</p>
+                <p>Facebook: Intellectgeospates</p>
+                <p>Twitter: Intellectgeospates</p>
+                <p>Telegram: <a href="https://t.me/intellectgeospates" target="_blank">Intellectgeospates</a> </p>
+                <p>Ukraine, Kharkiv, Gymnasium </p>
+                <p>Embankment St, 16 </p>
+            </div>
+            <div class="panel">
+                <iframe width="425" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=36.23849451541901%2C49.98277171809379%2C36.24557554721833%2C49.98581400762889&amp;layer=mapnik&amp;marker=49.98429288691235%2C36.242035031318665"
+                    style="border: 1px solid black"></iframe><br /><small><a
+                        href="https://www.openstreetmap.org/?mlat=49.98429&amp;mlon=36.24204#map=18/49.98429/36.24204&amp;layers=N"></a></small>
+            </div>
+        </div><!-- .footer -->
+
+        <div class="copyright-footer">
+            &copy; GISAPR Company - 2021
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function barFunction() {
+            window.scrollTo(0, 0);
+            var x = document.getElementById("mDropdown");
+            if (x.style.display === "block") {
+
+                x.style.display = "none";
+            } else {
+
+                x.style.display = "block";
+            }
+
+            //- - - -  обработка дальнейшего клика
+            window.onclick = function (event) {
+                if (document.getElementsByClassName('dropdown-content')[0].contains(event.target)) {
+                    x.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
